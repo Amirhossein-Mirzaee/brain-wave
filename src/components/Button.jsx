@@ -9,7 +9,7 @@ const Button = ({
   white,
   external,
 }) => {
-  const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
+  const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1  ${
     px || "px-7"
   } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
 
@@ -17,7 +17,7 @@ const Button = ({
 
   const renderButton = () => (
     <button className={classes} onClick={onClick}>
-      <span className={spanClasses}>{children}</span>
+      <span className={` font-vazir ${spanClasses}`}>{children}</span>
       {ButtonSvg(white)}
     </button>
   );
@@ -29,7 +29,7 @@ const Button = ({
       target={external ? "_blank" : "_self"}
       rel={external && "noreferrer noopener"}
     >
-      <span className={spanClasses}>{children}</span>
+      <span className={` font-vazir ${spanClasses}`}>{children}</span>
       {ButtonSvg(white)}
     </a>
   );

@@ -42,6 +42,7 @@ export default {
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
+        vazir: ["Vazir", "sans-serif"], // <-- added Vazir
       },
       letterSpacing: {
         tagline: ".15em",

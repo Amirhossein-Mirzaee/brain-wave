@@ -8,13 +8,13 @@ import { curve } from "../assets";
 
 const Benefits = () => {
   return (
-    <Section id="features">
+    <Section id="features" dir="rtl" className="font-vazir">
       <div className="container relative z-2">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl text-right"
           title={
             <>
-              Chat Smarter, Not Harder with{" "}
+              هوشمندانه چت کنید، نه سخت با{" "}
               <span className="inline-block relative font-semibold">
                 Brainwave
                 <img
@@ -39,18 +39,22 @@ const Benefits = () => {
               key={benefit.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h5 mb-5">{benefit.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{benefit.text}</p>
+                <h5 className="h5 mb-5 text-right">
+                  {benefit.farsiTitle || benefit.title}
+                </h5>
+                <p className="body-2 mb-6 text-n-3 text-right">
+                  {benefit.farsiText || benefit.text}
+                </p>
                 <div className="flex items-center mt-auto">
                   <img
                     src={benefit.iconUrl}
                     width={48}
                     height={48}
-                    alt={benefit.title}
+                    alt={benefit.farsiTitle || benefit.title}
                   />
 
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    Explore more
+                  <p className="ml-auto font-vazir text-xs font-bold text-n-1 uppercase tracking-wider">
+                    بیشتر ببینید
                   </p>
                   <Arrow />
                 </div>
@@ -68,7 +72,7 @@ const Benefits = () => {
                       src={benefit.imageUrl}
                       width={380}
                       height={362}
-                      alt={benefit.title}
+                      alt={benefit.farsiTitle || benefit.title}
                       className="w-full h-full object-cover"
                     />
                   )}

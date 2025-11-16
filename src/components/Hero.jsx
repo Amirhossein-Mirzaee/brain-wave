@@ -22,19 +22,19 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <div ref={parallaxRef} className="container relative">
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
+      <div ref={parallaxRef} className="container relative" dir="rtl">
+        {/* Main Hero Text */}
+        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem] font-vazir">
           <h1 className="h1 mb-6">
-            Explore the Possibilities of
-            <br />
+            با امکاناتی مثل
             <Typewriter
               options={{
                 strings: [
-                  "AI Chatting",
-                  "Photo Editing",
-                  "Video Generation",
-                  "Image Generation",
-                  "Code Generation",
+                  "چت با هوش مصنوعی",
+                  "ویرایش تصویر",
+                  "تولید ویدیو",
+                  "تولید تصویر",
+                  "تولید کد",
                 ],
                 autoStart: true,
                 loop: true,
@@ -43,8 +43,7 @@ const Hero = () => {
           </h1>
 
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleast the power of AI within Brainwave. Upgrade your productivity
-            with{" "}
+            قدرت هوش مصنوعی را در{" "}
             <span className="inline-block relative font-semibold">
               Brainwave
               <img
@@ -54,20 +53,20 @@ const Hero = () => {
                 height={28}
                 alt="Curve"
               />
-            </span>
-            , the open AI chat app.
+            </span>{" "}
+            تجربه کنید و بهره‌وری خود را ارتقا دهید.
           </p>
 
-          <Button href="#pricing" white>
-            Get started
+          <Button className={"text-xl"} href="#pricing" white>
+            بزن بریم{" "}
           </Button>
         </div>
 
+        {/* Hero Image and Parallax */}
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={robot}
@@ -92,7 +91,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="بریم کد بزنیم..."
                   />
                 </ScrollParallax>
               </div>

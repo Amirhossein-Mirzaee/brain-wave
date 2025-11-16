@@ -1,10 +1,12 @@
 import {
+  adidas,
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
   chromecast,
+  daroogar,
   disc02,
   discord,
   discordBlack,
@@ -14,6 +16,7 @@ import {
   framer,
   homeSmile,
   instagram,
+  netflix,
   notification2,
   notification3,
   notification4,
@@ -31,6 +34,7 @@ import {
   searchMd,
   slack,
   sliders04,
+  starbucs,
   telegram,
   twitter,
   yourlogo,
@@ -39,29 +43,14 @@ import {
 import { links } from "../config";
 
 export const navigation = [
-  {
-    id: "0",
-    title: "Features",
-    url: "#features",
-  },
-  {
-    id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
+  { id: "0", title: "Features", farsiTitle: "ویژگی‌ها", url: "#features" },
+  { id: "1", title: "Pricing", farsiTitle: "قیمت‌ها", url: "#pricing" },
+  { id: "2", title: "How to use", farsiTitle: "نحوه استفاده", url: "#how-to-use" },
+  { id: "3", title: "Roadmap", farsiTitle: "نقشه راه", url: "#roadmap" },
   {
     id: "4",
     title: "Source Code",
+    farsiTitle: "کد ها",
     url: links.sourceCode,
     onlyMobile: true,
     external: true,
@@ -72,7 +61,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [netflix, adidas, daroogar, starbucs];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -245,7 +234,9 @@ export const benefits = [
   {
     id: "0",
     title: "Ask anything",
+    farsiTitle: "هر چیزی بپرسید",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    farsiText: "به کاربران اجازه می‌دهد سریع پاسخ سوالات خود را پیدا کنند بدون نیاز به جستجوی منابع متعدد.",
     backgroundUrl: "/src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
@@ -253,7 +244,9 @@ export const benefits = [
   {
     id: "1",
     title: "Improve everyday",
+    farsiTitle: "بهبود روزانه",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    farsiText: "این برنامه از پردازش زبان طبیعی برای درک پرسش‌های کاربران و ارائه پاسخ‌های دقیق و مرتبط استفاده می‌کند.",
     backgroundUrl: "/src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -262,7 +255,9 @@ export const benefits = [
   {
     id: "2",
     title: "Connect everywhere",
+    farsiTitle: "ارتباط در همه‌جا",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    farsiText: "با ربات هوش مصنوعی از هر مکان و روی هر دستگاهی ارتباط برقرار کنید تا دسترسی راحت‌تر و کاربردی‌تر شود.",
     backgroundUrl: "/src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
@@ -270,7 +265,9 @@ export const benefits = [
   {
     id: "3",
     title: "Fast responding",
+    farsiTitle: "پاسخ سریع",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    farsiText: "به کاربران اجازه می‌دهد سریع پاسخ سوالات خود را پیدا کنند بدون نیاز به جستجوی منابع متعدد.",
     backgroundUrl: "/src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -279,7 +276,9 @@ export const benefits = [
   {
     id: "4",
     title: "Ask anything",
+    farsiTitle: "هر چیزی بپرسید",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    farsiText: "به کاربران اجازه می‌دهد سریع پاسخ سوالات خود را پیدا کنند بدون نیاز به جستجوی منابع متعدد.",
     backgroundUrl: "/src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
@@ -287,12 +286,15 @@ export const benefits = [
   {
     id: "5",
     title: "Improve everyday",
+    farsiTitle: "بهبود روزانه",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    farsiText: "این برنامه از پردازش زبان طبیعی برای درک پرسش‌های کاربران و ارائه پاسخ‌های دقیق و مرتبط استفاده می‌کند.",
     backgroundUrl: "/src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
 ];
+
 
 export const socials = [
   {
