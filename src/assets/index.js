@@ -76,14 +76,16 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
-import adidas from "./logos/adidas.png";
-import starbucs from "./logos/starbucks.png";
-import netflix from "./logos/netflix.png";
+
+import  adidas from "./logos/adidas.png"
+import  daroogar from "./logos/daroogar.png"
+import  starbucs from "./logos/starbucs.png"
+import  netflix from "./logos/netflix.png"
 
 export {
   adidas,
-  starbucs,
-  netflix,
+  daroogar,
+  starbucs,netflix,
   brainwave,
   check,
   check2,

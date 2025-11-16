@@ -61,7 +61,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [netflix, adidas, adidas, starbucs];
+export const companyLogos = [netflix, adidas, daroogar, starbucs];
 
 export const brainwaveServices = [
   "Photo generating",
