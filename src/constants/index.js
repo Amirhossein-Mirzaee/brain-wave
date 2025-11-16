@@ -6,7 +6,6 @@ import {
   benefitIcon4,
   benefitImage2,
   chromecast,
-  daroogar,
   disc02,
   discord,
   discordBlack,
@@ -61,7 +60,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [netflix, adidas, daroogar, starbucs];
+export const companyLogos = [netflix, adidas, starbucs];
 
 export const brainwaveServices = [
   "Photo generating",
