@@ -78,7 +78,7 @@ import twitter from "./socials/twitter.svg";
 
 
 import  adidas from "./logos/adidas.png"
-import  starbucs from "./logos/starbucs.png"
+import  starbucs from "./logos/starbucks.png"
 import  netflix from "./logos/netflix.png"
 
 export {
